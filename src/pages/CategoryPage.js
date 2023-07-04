@@ -23,7 +23,7 @@ function CategoryPage() {
   }, [categoryName]);
 
   return (
-    <section className="popular" id="popular">
+    <section className="catergory-list">
       {loading ? (
         <div className="loader-container">
           <img src={Loader} alt="Loading..." />

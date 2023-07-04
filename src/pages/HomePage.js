@@ -78,7 +78,7 @@ function HomePage() {
           </section>
 
 
-        <section className="speciality" id="speciality">
+        <section className="recipe-list" id="recipe-list">
           <h2 className="heading"><span> Yummy Taste!</span></h2>
 
       <div className="box-container">
@@ -101,7 +101,7 @@ function HomePage() {
 
   </section>
 
-        <section className="speciality">
+        <section className="recipe-list">
           <h2><br/><span>Choose from a variaty of trusted recipe categories </span></h2>
             <div className="box-container">
               {categories.length > 0 ? (

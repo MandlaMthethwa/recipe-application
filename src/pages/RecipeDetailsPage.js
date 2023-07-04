@@ -92,7 +92,7 @@ function RecipeDetailsPage() {
               <button className="btn" onClick={shareRecipe}>Share Recipe</button>
 
           <h2>{recipe.strMeal}</h2>
-          <section className="speciality">
+          <section className="recipe-list">
 
           <div className="box-container">
             <img src={recipe.strMealThumb} alt={recipe.strMeal} />

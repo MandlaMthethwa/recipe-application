@@ -175,13 +175,13 @@ header .navbar a:hover{
   padding:1rem 0;
 }
 
-.speciality .box-container{
+.recipe-list .box-container{
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
 }
 
-.speciality .box-container .box{
+.recipe-list .box-container .box{
   flex:1 1 30rem;
   position: relative;
   overflow: hidden;
@@ -191,7 +191,7 @@ header .navbar a:hover{
   border-radius: .5rem;
 }
 
-.speciality .box-container .box .image{
+.recipe-list .box-container .box .image{
   height:100%;
   width:100%;
   object-fit: cover;
@@ -199,42 +199,42 @@ header .navbar a:hover{
   top:-100%; left:0;
 }
 
-.speciality .box-container .box .content{
+.recipe-list .box-container .box .content{
   text-align: center;
   background:#fff;
   padding:2rem;
 }
 
-.speciality .box-container .box .content img{
+.recipe-list .box-container .box .content img{
   margin:1.5rem 0;
 }
 
-.speciality .box-container .box .content h3{
+.recipe-list .box-container .box .content h3{
   font-size: 2.5rem;
   color:#333;
 }
 
-.speciality .box-container .box .content p{
+.recipe-list .box-container .box .content p{
   font-size: 1.6rem;
   color:#666;
   padding:1rem 0;
 }
 
-.speciality .box-container .box:hover .image{
+.recipe-list .box-container .box:hover .image{
   top:0;
 }
 
-.speciality .box-container .box:hover .content{
+.recipe-list .box-container .box:hover .content{
   transform: translateY(100%);
 }
 
-.popular .box-container{
+.catergory-list .box-container{
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
 }
 
-.popular .box-container .box{
+.catergory-list .box-container .box{
   padding:2rem;
   background:#fff;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -245,14 +245,14 @@ header .navbar a:hover{
   position: relative;
 }
 
-.popular .box-container .box img{
+.catergory-list .box-container .box img{
   height:25rem;
   object-fit: cover;
   width:100%;
   border-radius: .5rem;
 }
 
-.popular .box-container .box .price{
+.catergory-list .box-container .box .price{
   position: absolute;
   top:3rem; left:3rem;
   background:var(--red);
@@ -262,13 +262,13 @@ header .navbar a:hover{
   border-radius: .5rem;
 }
 
-.popular .box-container .box h3{
+.catergory-list .box-container .box h3{
   color:#333;
   font-size: 2.5rem;
   padding-top: 1rem;
 }
 
-.popular .box-container .box .stars i{
+.catergory-list .box-container .box .stars i{
   color:gold;
   font-size: 1.7rem;
   padding:1rem .1rem;
@@ -277,79 +277,6 @@ header .navbar a:hover{
   justify-Content: center;
    align-Items: center;
 }
-.steps{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
-  padding:1rem;
-}
-
-.steps .box{
-  flex:1 1 25rem;
-  padding:1rem;
-  text-align: center;
-}
-
-.steps .box img{
-  border-radius: 50%;
-  border:1rem solid #fff;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-.steps .box h3{
-  font-size: 3rem;
-  color:#333;
-  padding:1rem;
-}
-
-.gallery .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
-}
-
-.gallery .box-container .box{
-  height:25rem;
-  flex:1 1 30rem;
-  border:1rem solid #fff;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  border-radius: .5rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.gallery .box-container .box img{
-  height:100%;
-  width:100%;
-  object-fit: cover;
-}
-
-.gallery .box-container .box .content{
-  position: absolute;
-  top:-100%; left:0;
-  height: 100%;
-  width:100%;
-  background:rgba(255,255,255,.9);
-  padding:2rem;
-  padding-top: 5rem;
-  text-align: center;
-}
-
-.gallery .box-container .box .content h3{
-  font-size: 2.5rem;
-  color:#333;
-}
-
-.gallery .box-container .box .content p{
-  font-size: 1.5rem;
-  color:#666;
-  padding:1rem 0;
-}
-
-.gallery .box-container .box:hover .content{
-  top:0;
-}
-
 .review .box-container{
   display: flex;
   flex-wrap: wrap;
