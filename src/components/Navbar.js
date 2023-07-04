@@ -18,11 +18,8 @@ function Navbar() {
 
       <nav className="navbar">
         <Link to="/">home</Link>
-        <Link to="#speciality">speciality</Link>
-        <Link to="#popular">popular</Link>
-        <Link to="/gallery">gallery</Link>
-        <Link to="#review">review</Link>
-        <Link to="/order">order</Link>
+        <Link to="#review">Reviews</Link>
+        <Link to="#order">Request recipe</Link>
       </nav>
     </header>
   );

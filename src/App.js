@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'; 
+
 import RecipeDetailsPage from './pages/RecipeDetailsPage';
 import CategoryPage from './pages/CategoryPage';
 import '../src/css/App.css';
@@ -17,6 +19,7 @@ function App() {
         <Route path="/category/:categoryName" element={<CategoryPage />} />
 
       </Routes>
+      <Footer/>
     </Router>
   );
 }

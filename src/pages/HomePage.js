@@ -77,7 +77,7 @@ function HomePage() {
           </section>
 
           <section className="speciality" id="speciality">
-      <h2 className="heading"><span> Yummy Taste</span></h2>
+      <h2 className="heading"><span> Yummy Taste!</span></h2>
 
       <div className="box-container">
   {recipes.length > 0 ? (
@@ -93,14 +93,15 @@ function HomePage() {
       </Link>
     ))
   ) : (
-    <p>Recipe Not found ? Reach Out</p>
+    <p>Recipe Not found ? Please scroll down and request</p>
   )}
 </div>
 
     </section>
 
           <section className="speciality">
-            <h2>Recipe Categories</h2>
+            <h2><br/><span>Choose from a variaty of trusted recipe categories </span></h2>
+           
             <div className="box-container">
               {categories.length > 0 ? (
                 categories.map((category) => (
@@ -136,9 +137,7 @@ function HomePage() {
         <i className="far fa-star"></i>
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-        delectus, ducimus facere quod ratione vel laboriosam? Est, maxime
-        rem. Itaque.
+      Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
       </p>
     </div>
     <div className="box">
@@ -152,9 +151,7 @@ function HomePage() {
         <i className="far fa-star"></i>
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-        delectus, ducimus facere quod ratione vel laboriosam? Est, maxime
-        rem. Itaque.
+      Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
       </p>
     </div>
     <div className="box">
@@ -168,9 +165,7 @@ function HomePage() {
         <i className="far fa-star"></i>
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-        delectus, ducimus facere quod ratione vel laboriosam? Est, maxime
-        rem. Itaque.
+      Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
       </p>
     </div>
   </div>

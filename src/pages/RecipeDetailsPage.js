@@ -7,6 +7,21 @@ function RecipeDetailsPage() {
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
 
+
+  const shareRecipe = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: recipe.title,
+        text: recipe.description,
+        url: window.location.href,
+      })
+        .then(() => console.log('Recipe shared successfully.'))
+        .catch((error) => console.log('Error sharing recipe:', error));
+    } else {
+      console.log('Share API not supported.');
+    }
+  };
+
   useEffect(() => {
     // Fetch recipe details from the API
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
@@ -74,6 +89,8 @@ function RecipeDetailsPage() {
         </div>
       ) : recipe ? (
         <>
+              <button className="btn" onClick={shareRecipe}>Share Recipe</button>
+
           <h2>{recipe.strMeal}</h2>
           <section className="speciality">
 
@@ -114,31 +131,6 @@ function RecipeDetailsPage() {
   );
 }
 
-function CountdownTimer({ time }) {
-  const [remainingTime, setRemainingTime] = useState(time);
 
-  useEffect(() => {
-    if (remainingTime > 0) {
-      const timer = setTimeout(() => {
-        setRemainingTime((prevTime) => prevTime - 1);
-      }, 1000);
-
-      return () => clearTimeout(timer);
-    }
-  }, [remainingTime]);
-
-  const formatTime = (timeInSeconds) => {
-    const minutes = Math.floor(timeInSeconds / 60).toString().padStart(2, '0');
-    const seconds = (timeInSeconds % 60).toString().padStart(2, '0');
-    return [minutes, seconds];
-  };
-
-  return (
-    <div className="countdown-timer">
-      <p>Remaining Time: {formatTime(remainingTime)}</p>
-      {remainingTime === 0 && <p>Timer Finished!</p>}
-    </div>
-  );
-}
 
 export default RecipeDetailsPage;
