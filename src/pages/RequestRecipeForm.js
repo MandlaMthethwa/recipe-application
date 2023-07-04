@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Waiter from '../images/request.jpeg';
 function RequestRecipeForm() {
   const [formData, setFormData] = useState({
     email: '',
@@ -29,9 +29,13 @@ function RequestRecipeForm() {
 
   return (
     <section className="order" id="order">
-    <div>
+    
       <h2>Request Recipe</h2>
-
+      <div className="row">
+        
+        <div className="image">
+            <img src={Waiter} alt=""/>
+        </div>
       <form onSubmit={handleSubmit}>
 
 
@@ -85,7 +89,7 @@ function RequestRecipeForm() {
             id="details"
             name="details"
             value={formData.details}
-            placeholder="Any little details will be appreciated"
+            placeholder="Any little detail will be appreciated"
             onChange={handleChange}
             required
           ></textarea>

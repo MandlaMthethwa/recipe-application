@@ -152,7 +152,7 @@ function HomePage() {
                       <i className="far fa-star"></i>
                    </div>
                   <p>
-                   Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
+                   Easy to follow and if want you want tasty food follow these recipes
                   </p>
                 </div>
                  <div className="box">
@@ -166,7 +166,7 @@ function HomePage() {
                       <i className="far fa-star"></i>
                    </div>
                   <p>
-                   Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
+                   The App is easy to use and it's neat with reliable ricipes
                  </p>
                 </div>
            </div>
