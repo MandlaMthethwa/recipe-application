@@ -50,6 +50,7 @@ function HomePage() {
   }, []);
 
   return (
+
     <div className="homepage">
        <link
         rel="stylesheet"
@@ -76,32 +77,32 @@ function HomePage() {
             </div>
           </section>
 
-          <section className="speciality" id="speciality">
-      <h2 className="heading"><span> Yummy Taste!</span></h2>
+
+        <section className="speciality" id="speciality">
+          <h2 className="heading"><span> Yummy Taste!</span></h2>
 
       <div className="box-container">
-  {recipes.length > 0 ? (
-    recipes.map((meal) => (
-      <Link to={`/recipe/${meal.idMeal}`} key={meal.idMeal}>
-        <div className="box">
-          <img className="image" src={meal.strMealThumb} alt={meal.strMeal} />
-          <div className="content">
-            <img src={meal.strMealThumb} alt={meal.strMeal} />
-            <h3>{meal.strMeal}</h3>
-          </div>
-        </div>
-      </Link>
+        {recipes.length > 0 ? (
+          recipes.map((meal) => (
+          <Link to={`/recipe/${meal.idMeal}`} key={meal.idMeal}>
+           <div className="box">
+            <img className="image" src={meal.strMealThumb} alt={meal.strMeal} />
+              <div className="content">
+               <img src={meal.strMealThumb} alt={meal.strMeal} />
+               <h3>{meal.strMeal}</h3>
+              </div>
+            </div>
+          </Link>
     ))
   ) : (
     <p>Recipe Not found ? Please scroll down and request</p>
   )}
-</div>
+    </div>
 
-    </section>
+  </section>
 
-          <section className="speciality">
-            <h2><br/><span>Choose from a variaty of trusted recipe categories </span></h2>
-           
+        <section className="speciality">
+          <h2><br/><span>Choose from a variaty of trusted recipe categories </span></h2>
             <div className="box-container">
               {categories.length > 0 ? (
                 categories.map((category) => (
@@ -123,53 +124,53 @@ function HomePage() {
 
           <RequestRecipeForm />
 
-          <section className="review" id="review">
-  <h1 className="heading">our customers <span>reviews</span></h1>
-  <div className="box-container">
-    <div className="box">
-      <img src={Review1} alt="" />
-      <h3>john deo</h3>
-      <div className="stars">
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="far fa-star"></i>
-      </div>
-      <p>
-      Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
-      </p>
-    </div>
-    <div className="box">
-      <img src={Review2} alt="" />
-      <h3>john deo</h3>
-      <div className="stars">
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="far fa-star"></i>
-      </div>
-      <p>
-      Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
-      </p>
-    </div>
-    <div className="box">
-      <img src={Review3} alt="" />
-      <h3>john deo</h3>
-      <div className="stars">
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="fas fa-star"></i>
-        <i className="far fa-star"></i>
-      </div>
-      <p>
-      Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
-      </p>
-    </div>
-  </div>
-</section>
+       <section className="review" id="review">
+          <h1 className="heading">our customers <span>reviews</span></h1>
+             <div className="box-container">
+               <div className="box">
+                <img src={Review1} alt="" />
+                <h3>john deo</h3>
+                    <div className="stars">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="far fa-star"></i>
+                    </div>
+                 <p>
+                  Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
+                 </p>
+                </div>
+                <div className="box">
+                  <img src={Review2} alt="" />
+                  <h3>john deo</h3>
+                    <div className="stars">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="far fa-star"></i>
+                   </div>
+                  <p>
+                   Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
+                  </p>
+                </div>
+                 <div className="box">
+                  <img src={Review3} alt="" />
+                  <h3>john deo</h3>
+                    <div className="stars">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="far fa-star"></i>
+                   </div>
+                  <p>
+                   Everything I’ve ever wanted in a recipe app. I can do multiple things in one place
+                 </p>
+                </div>
+           </div>
+    </section>
 
         </>
       )}
