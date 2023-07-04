@@ -4,7 +4,8 @@ This is a recipe app that allows users to discover and explore various recipes. 
 # Installation and Start
 To run the project locally, follow these steps:
 ### npm install
-### npm start ,This will start the development server and open the app in your default browser at http://localhost:3000.
+### npm start 
+This will start the development server and open the app in your default browser at http://localhost:3000.
 
 # Technologies Used
 ## React:
