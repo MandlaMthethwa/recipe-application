@@ -129,7 +129,7 @@ function HomePage() {
              <div className="box-container">
                <div className="box">
                 <img src={Review1} alt="" />
-                <h3>john deo</h3>
+                <h3>Sarh</h3>
                     <div className="stars">
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
@@ -143,7 +143,7 @@ function HomePage() {
                 </div>
                 <div className="box">
                   <img src={Review2} alt="" />
-                  <h3>john deo</h3>
+                  <h3>Mark</h3>
                     <div className="stars">
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>
@@ -157,7 +157,7 @@ function HomePage() {
                 </div>
                  <div className="box">
                   <img src={Review3} alt="" />
-                  <h3>john deo</h3>
+                  <h3>Mia</h3>
                     <div className="stars">
                       <i className="fas fa-star"></i>
                       <i className="fas fa-star"></i>

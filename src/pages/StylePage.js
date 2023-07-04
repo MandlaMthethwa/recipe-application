@@ -14,7 +14,6 @@ const StylePage = () => {
     }, []);
   
    
-  
     const handleScroll = () => {
       const menu = document.querySelector('#menu-bar');
       const navbar = document.querySelector('.navbar');
